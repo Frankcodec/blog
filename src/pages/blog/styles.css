@@ -1,0 +1,131 @@
+.blog-wrap{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.blog-goBack{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    display: block;
+    width: fit-content;
+}
+.hex{
+    color: #fff;
+    height: fit-content;
+    padding: 6px 8px;
+    background-color: blue;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 1px 1px 19px -5px #000;
+}
+.blog-goBack:hover{
+    transform: scale(1.05);
+}
+.blog-wrap header{
+    text-align: center;
+}
+.blog-date{
+    font-size: 0.8rem;
+    color: #a9a9a9;
+    font-weight: 500;
+}
+.blog-wrap img{
+    width: 100%;
+}
+.blog-subCategory{
+    display: flex;
+    justify-content: center;
+}
+.blog-subCategory div{
+    margin: 1rem;
+}
+.blog-desc{
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+.text-area{
+    width: 100%;
+    border-radius: 10px;
+    margin: 5% auto;
+    outline: none;
+    padding: auto;
+    font-size: 14px;
+}
+#comment-wrap{
+    margin: 5% auto;
+    max-width: 700px;
+}
+#like{
+    height: 40px;
+    border-radius: 15px;
+    width: 200px;
+    color: #000;
+}
+#dislike{
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+    color: #000;
+}
+#reaction{
+    margin: 2% auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+#up{
+    scale: 2;
+}
+#down{
+    scale: 2;
+}
+button{
+    cursor: pointer;
+}
+.bounce{
+    animation: jumpy 1s linear;
+}
+.comment-btn{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(100deg, transparent 50%, #fff 50.1%);
+    border: 1px solid #fff;
+    color: #fff;
+    background-size: 200%;
+    background-position: 0% 0;
+}
+.comment-btn:hover{
+    animation: roll 0.7s linear;
+    animation-fill-mode: forwards; 
+    font-weight: 700;
+}
+@keyframes jumpy{
+    20%{
+        transform: rotateZ(40deg);
+    }
+    80%{
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        transform: rotateZ(0deg);        
+    }
+}
+@keyframes roll {
+    100%{
+        background-position: 100% 50%;
+        color: #000;
+        border: 1px solid rgb(7, 0, 26);
+    }
+}
+.container{
+	max-width: 1140px;
+	width: 91%;
+	margin: 0 auto;
+	padding: 1rem 0;
+}
